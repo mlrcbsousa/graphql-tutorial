@@ -5,5 +5,10 @@ module Types
     # we are exposing `email` just for tutorial purposes
     # in real application shouldn't leak user emails
     field :email, String, null: false
+
+    # field :created_at, DateTimeType, null: false
+
+    field :votes, [VoteType], null: false
+    field :links, [LinkType], null: false
   end
 end
